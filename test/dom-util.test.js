@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { visitAllNodes,
-        flattenTreeToArray } = require('../dom-util');
+        flattenTreeToArray, } = require('../dom-util');
 
 describe('dom-util', () => {
 
@@ -34,7 +34,7 @@ describe('dom-util', () => {
         4: 2,
         3: 4,
         2: 8,
-        1: 24
+        1: 24,
       });
     });
   });
