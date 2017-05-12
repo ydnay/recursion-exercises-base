@@ -3,6 +3,12 @@ const _ = require('underscore');
 
 const getElementById = function (root, id) {
   // Your code here
+  const flatArr = flattenTreeToArray(root);
+  return flatArr.filter((elem) => {
+    if (flatArr[elem] === id) {
+      return id;
+    }
+  });
 };
 
 const getElementsByClassName = function (root, className) {
