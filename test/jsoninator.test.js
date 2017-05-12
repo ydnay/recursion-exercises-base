@@ -50,17 +50,17 @@ describe('stringify()', () => {
     expect(stringify({})).toEqual('{}');
   });
   it('can stringify a simple object literal', () => {
-    expect(stringify({'a': 'apple'})).toEqual('{"a":"apple"}');
+    expect(stringify({ a: 'apple' })).toEqual('{"a":"apple"}');
   });
   it('can stringify objects nested in objects', () => {
-    expect(stringify({'a': {'b': 'c'}})).toEqual('{"a":{"b":"c"}}');
+    expect(stringify({ a: { b: 'c' } })).toEqual('{"a":{"b":"c"}}');
   });
   it('can stringify objects nested in arrays', () => {
-    expect(stringify([{'a': 'b'}, {'c': 'd'}])).toEqual('[{"a":"b"},{"c":"d"}]');
+    expect(stringify([{ a: 'b' }, { c: 'd' }])).toEqual('[{"a":"b"},{"c":"d"}]');
   });
 
   it('can stringify arrays nested in objects', () => {
-    expect(stringify({'a': ['b', 'c']})).toEqual('{"a":["b","c"]}');
+    expect(stringify({ a: ['b', 'c'] })).toEqual('{"a":["b","c"]}');
   });
 
 });
