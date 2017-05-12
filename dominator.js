@@ -26,6 +26,15 @@ const getElementsByClassName = function (root, className) {
 
 const getElementsByTagName = function (root, tagName) {
   // Your code here
+  const flatArr = flattenTreeToArray(root);
+  let tagNameArr = [];
+  tagNameArr.map((elem) => {
+    if (flatArr[elem].tagName === tagName) {
+      tagNameArr.push(flatArr[elem]);
+    }
+  });
+
+  return tagNameArr;
 };
 
 module.exports = {
