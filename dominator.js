@@ -13,11 +13,10 @@ const getElementById = function (root, id) {
 
 const getElementsByClassName = function (root, className) {
   // Your code here
-  // TODO: test not passing
   const flatArr = flattenTreeToArray(root);
   let classNameArr = [];
   for (var i = 0; i < flatArr.length; i++) {
-    if (flatArr[i].className === className) {
+    if (flatArr[i].className && flatArr[i].className.indexOf(className) !== -1) {
       classNameArr.push(flatArr[i]);
     }
   }

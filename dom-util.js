@@ -15,7 +15,6 @@ const visitAllNodes = function (node, callback) {
 const flattenTreeToArray = function (node) {
   // Hint: Use visitAllNodes()
   // Your code here
-  // TODO: fix!!! No test is passing so far
   const flatArr = [];
   visitAllNodes(node, (child) => flatArr.push(child));
   return flatArr;

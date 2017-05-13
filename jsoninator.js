@@ -23,8 +23,6 @@ const stringify = function (obj) {
 
     return '{' + res.join() + '}';
   }
-
-  return obj;
 };
 
 module.exports = {

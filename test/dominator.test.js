@@ -1,6 +1,6 @@
 const { getElementById,
         getElementsByClassName,
-        getElementsByTagName } = require('../dominator');
+        getElementsByTagName, } = require('../dominator');
 const fs = require('fs');
 
 describe('dominator', () => {
